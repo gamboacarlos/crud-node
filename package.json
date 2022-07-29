@@ -1,7 +1,7 @@
 {
-  "name": "crud",
+  "name": "node-crud",
   "version": "1.0.0",
-  "description": "",
+  "description": "Products management application",
   "main": "index.ts",
   "scripts": {
     "tsc": "tsc",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlos Gamboa",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.12",

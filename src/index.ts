@@ -8,7 +8,7 @@ const PORT = 3001;
 // Middlewares //////
 app.use(cors());
 app.use(express.json());
-app.use("/api", productsRouter);
+app.use("/api/v1", productsRouter);
 
 // API setup //////
 app.listen(PORT, () => {

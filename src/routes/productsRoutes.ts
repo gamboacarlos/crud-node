@@ -46,12 +46,12 @@ router.get("/products", (_req, res: Response) => {
     .catch((error: Response) => res.json({ message: error }));
 });
 
-// Edit a product ///////////
+// Edit a product price ///////////
 router.put("/products/:id", (req: Request, res: Response) => {
   const { id } = req.params;
-  const { text } = req.body;
+  const { price } = req.body;
   productSchema
-    .updateOne({ id: id }, { $set: { text } })
+    .updateOne({ id: id }, { $set: { price } })
     .then((data: Response) => res.json(data))
     .catch((error: Response) => res.json({ message: error }));
 });
